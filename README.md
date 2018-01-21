@@ -1,33 +1,25 @@
-# Cardify
+# Poyecto Cardify
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Cardify corresponde a un plugin de JQuery, el cual nos permite reemplazar una imagen por el texto contenido en la descripción (`alt`) al pasar el mouse por encima de cada una.
 
-***
+## Metodología de trabajo
 
-Implementaremos un plugin utilizando jQuery que dado un _contenedor_ debe buscar todas las imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>` con el texto del atributo `alt` de la imagen.
+* Utilizamos la metodología Agile, para mejorar la eficiencia en la producción y la calidad de nuestro producto.
+
+* Como herramienta de planificación utilizamos Trello, para tener un mayor orden en las tareas encomendadas y la claridad de lo que necesitariamos para levar a cabo el proyecto.
+
+* Utilizamos Whatsapp para poder mantenernos conectadas en todo momento y así tener una comunicación clara al momento de realizar cualquier cambio en el proyecto.
+
+##Requerimientos Técnicos
+
+El proyecto fue realizado con los siguientes recursos:
+
+* Dependencias de Producción
+  - jQuery `~v.3.2.1`
+  - Materialize `~v.0.100.2`
 
 ***
 
 ## Instalación
 
-### Global (navegador)
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-```
-
-## Uso
-
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
-
-## Ejemplos
-
-...
+Linkear por medio de una etiqueta script `<script>`
