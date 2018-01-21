@@ -1,0 +1,30 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "proyecto cardify, libreríia jquery\u001b[5~\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Ca jquery",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "cli": "^1.0.1",
+    "eslint": "^4.15.0",
+    "jquery": "^3.3.1",
+    "materialize-css": "^0.100.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatyNatur/cardify.git"
+  },
+  "author": "Natalia Castro, Pamela Inalef, Lorena Palominos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatyNatur/cardify/issues"
+  },
+  "homepage": "https://github.com/NatyNatur/cardify#readme"
+}
