@@ -1,4 +1,4 @@
-# Poyecto Cardify
+# Proyecto Cardify
 
 Cardify corresponde a un plugin de JQuery, el cual nos permite reemplazar una imagen por el texto contenido en la descripción (`alt`) al pasar el mouse por encima de cada una.
 
@@ -10,7 +10,7 @@ Cardify corresponde a un plugin de JQuery, el cual nos permite reemplazar una im
 
 * Utilizamos Whatsapp para poder mantenernos conectadas en todo momento y así tener una comunicación clara al momento de realizar cualquier cambio en el proyecto.
 
-##Requerimientos Técnicos
+## Requerimientos Técnicos
 
 El proyecto fue realizado con los siguientes recursos:
 
