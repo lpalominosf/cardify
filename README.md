@@ -53,8 +53,8 @@ $(container).cardify({});
 ## Herramientas
 
 **Desarrollo:**
-* jQuery
-* Materialize
+* jQuery.
+* Materialize.
 
 **Producción:**
-* Editor de texto: Sublime.
+* Editor de texto: Sublime Text 3.
