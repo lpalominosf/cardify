@@ -20,7 +20,9 @@ con el texto del atributo `alt` de la imagen.
 
 3. Se editó readme con explicación general del proyecto.
 
-4. Se creó Issue.
+4. Se creó primer Issue y Milestone.
+
+5. Se creo index.html con ejemplo principal de uso.
 
 ***
 
@@ -53,8 +55,7 @@ $(container).cardify({});
 ## Herramientas
 
 **Desarrollo:**
-* jQuery
-* Materialize
+* jQuery ~v.3.2.1.
 
 **Producción:**
-* Editor de texto: Sublime.
+* Editor de texto: Sublime Text 3.
