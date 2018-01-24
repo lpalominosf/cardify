@@ -1,32 +1,38 @@
-//Llamando el plugin al div container
-$(document).ready(function(){
-   $('#container').nombre_del_plugin();
-  
-  });
-
-(function ($){
-  jQuery.fn.nombre_del_plugin = function() {
- var buscar = $('#container').find('img');
-  if (buscar.length > 0) {
-     console.log(buscar);
-     for(i=0; i<=buscar.length; i++)
-     $(buscar[i]).wrap('<figure></figure>');
-     var padre =  buscar[i].parent();
-     var mensaje = $(buscar[i]).attr('alt')
-     padre.after('<figcaption>' + mensaje + '</figcaption>')
-    };
-
-  };
+$(document).ready(function() {
+    $('.container').cardify({});
+});
+(function($) {
+    jQuery.fn.cardify = function() {
+        $('img').wrap('<figure></figure>');
+        $('img').map(function() {
+            $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
+            $('img').css({
+                'width': '400px',
+                'clear': 'left',
+                'margin-bottom': '1px',
+                'margin-right': '10px'
+            });
+        });
+    }
 })(jQuery);
 
+//$('img').hover(function(){
+// var atributo = $(this).attr("alt");
+// $(this).wrap('<figure></figure>');
+//$(this).append('<figcaption> +'atributo'+<figcaption>');
 
-   
+//})
 
-
-
-    var archivo = $("#file").val();
+function extension(img) {
+    var archivo = $(".img").val();
+    console.log(archivo);
     var extensiones = archivo.substring(archivo.lastIndexOf("."));
-    if (extensiones != ".jpg" || extensiones != ".jpg" || extensiones != ".jpeg") {
+    if (extensiones != ".jpg" || extensiones != ".png" || extensiones != ".jpeg") {
         alert("El archivo de tipo " + extensiones + "no es válido");
     }
-//});
+}
+
+extension();
+
+
+//module.exports = extension;
