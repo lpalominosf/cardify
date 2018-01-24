@@ -13,9 +13,27 @@ $(document).ready(function() {
                 'margin-right': '10px'
             });
         });
+    $('figure').css({
+            'position': 'relative',
+            'float': 'left'
+          });
+        $('figcaption').css({
+            'background-color': 'black',
+            'color': 'white',
+            'max-width': '400px',
+            'font-size': '10px',
+            'display': 'block',
+            'float': 'left',
+            'position': 'absolute',
+            'top': '0',
+            'opacity': '0'
+        });
+        $('figure').hover(function(){
+          $('img').css('cursor', 'pointer');
+          $('figcaption').css('opacity','1');
+      });
     }
 })(jQuery);
-
 //$('img').hover(function(){
 // var atributo = $(this).attr("alt");
 // $(this).wrap('<figure></figure>');
