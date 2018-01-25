@@ -21,7 +21,7 @@ global.navigator = {
 var $ = require('jquery');
 const cardify = require("../src/cardify");
 
-describe('comprobar extension', function() {
+describe('comprobar extension', () => {
 
   it('debería devolver true para archivos con extensión .jpg, .jpeg o .png', () => {
     chai.assert.equal(cardify.extension('.jpg'), true);
