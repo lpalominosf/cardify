@@ -1,12 +1,13 @@
+const $ = require("jquery");
+
 $(document).ready(function() {
     //Llamando plug-in
     $('.container').cardify({});
 });
 //plug-in de cardify
-const cardifyimg = {};
 
 (function($) {
-    jQuery.fn.cardify = function() {
+    $.fn.cardify = function() {
 
         $('img').wrap('<figure></figure>');
         $('img').map(function() {
@@ -41,7 +42,7 @@ const cardifyimg = {};
             });
         })
     }
-})(jQuery);
+})($);
 //$('img').hover(function(){
 // var atributo = $(this).attr("alt");
 // $(this).wrap('<figure></figure>');
@@ -49,18 +50,28 @@ const cardifyimg = {};
 
 //})
 
-
+const cardifyimg = {};
 cardifyimg.extension = function(img) {
-    var archivo = $(".img").attr('src');
+    const archivo = $(".img").attr('src');
     console.log(archivo);
-    var extensiones = archivo.substring(archivo.lastIndexOf("."));
+    const extensiones = archivo.substring(archivo.lastIndexOf("."));
     if (extensiones != ".jpg" & extensiones != ".png" & extensiones != ".jpeg") {
-        alert("El archivo de tipo " + extensiones + " no es válido");
+        //alert("El archivo de tipo " + extensiones + " no es válido");
     } else {
-        alert("El archivo de tipo " + extensiones + " es válido");
+        //alert("El archivo de tipo " + extensiones + " es válido");
     }
 }
 cardifyimg.extension();
 
+cardifyimg.alt = function(alt){
+ const atributo = $(".img").attr('alt');
+ console.log(atributo);
+ if(atributo == ""){
+    //alert('no lo tiene');
+ }else{
+    //alert('lo tiene');
+ }
+}
+cardifyimg.alt();
 
 module.exports = cardifyimg;
