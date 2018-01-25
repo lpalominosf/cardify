@@ -13,6 +13,7 @@ $(document).ready(function() {
                 'margin-right': '10px'
             });
         });
+        
     $('figure').css({
             'position': 'relative',
             'float': 'left'
