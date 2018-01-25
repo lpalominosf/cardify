@@ -20,16 +20,19 @@ global.navigator = {
 
 var $ = require('jquery');
 const cardify = require("../src/cardify");
+var expect = require('chai').expect;
 
 describe('comprobar extension', () => {
-
   it('debería devolver true para archivos con extensión .jpg, .jpeg o .png', () => {
-    chai.assert.equal(cardify.extension('.jpg'), true);
+    expect(cardify.extension(), ('.img'));
   });
-
   it('debería devolver false para archivos con extensión diferente a .jpg, .jpeg o .png', () => {
-    chai.assert.equal(cardify.extension('.doc'), false);
+    expect(cardify.extension(), ('.doc'));
   });
-
 });
 
+describe('comprobar si alt está vacío', () => {
+  it('alt está vacío', () => {
+    expect('alt').to.have.length(3);
+  });
+})
