@@ -1,20 +1,16 @@
 
-var extension = require('../src/app');
+const chai = require('chai');
+const $ = require('jquery');
+const cardifyimg = require("../src/cardify");
 
-var assertEqual = function(value, expected) {
-  if (value !== expected) {
-    throw new Error(`Expected '${value}' to equal '${expected}'`);
-  }
-};
+describe('comprobar extension', function() {
 
-describe('extension', function() {
-
-  it('debería devolver true para archivos con extensión .jpg, .jpeg o .png', function() {
-    assert.equal(extension, true);
+  it('debería devolver true para archivos con extensión .jpg, .jpeg o .png', () => {
+    chai.assert.equal(cardifyimg.extension('.jpg'), true);
   });
 
-  it('debería devolver false para archivos con extensión diferente a .jpg, .jpeg o .png', function() {
-    assert.equal(extension, false);
+  it('debería devolver false para archivos con extensión diferente a .jpg, .jpeg o .png', () => {
+    chai.assert.equal(cardifyimg.extension('.doc'), false);
   });
 
 });

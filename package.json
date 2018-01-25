@@ -4,7 +4,7 @@
   "description": "Proyecto laboratoria",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test --reporter nyan"
   },
   "repository": {
     "type": "git",

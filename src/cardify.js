@@ -1,8 +1,13 @@
 $(document).ready(function() {
+    //Llamando plug-in
     $('.container').cardify({});
 });
+//plug-in de cardify
+const cardifyimg = {};
+
 (function($) {
     jQuery.fn.cardify = function() {
+
         $('img').wrap('<figure></figure>');
         $('img').map(function() {
             $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
@@ -13,10 +18,10 @@ $(document).ready(function() {
                 'margin-right': '10px'
             });
         });
-    $('figure').css({
+        $('figure').css({
             'position': 'relative',
             'float': 'left'
-          });
+        });
         $('figcaption').css({
             'background-color': 'black',
             'color': 'white',
@@ -28,10 +33,13 @@ $(document).ready(function() {
             'top': '0',
             'opacity': '0'
         });
-        $('figure').hover(function(){
-          $('img').css('cursor', 'pointer');
-          $('figcaption').css('opacity','1');
-      });
+        $('figure').each(function() {
+            $(this).hover(function() {
+                $('figcaption').css('opacity', '1');
+            }, function() {
+                $('figcaption').css('opacity', '0');
+            });
+        })
     }
 })(jQuery);
 //$('img').hover(function(){
@@ -41,16 +49,18 @@ $(document).ready(function() {
 
 //})
 
-function extension(img) {
-    var archivo = $(".img").val();
+
+cardifyimg.extension = function(img) {
+    var archivo = $(".img").attr('src');
     console.log(archivo);
     var extensiones = archivo.substring(archivo.lastIndexOf("."));
-    if (extensiones != ".jpg" || extensiones != ".png" || extensiones != ".jpeg") {
-        alert("El archivo de tipo " + extensiones + "no es válido");
+    if (extensiones != ".jpg" & extensiones != ".png" & extensiones != ".jpeg") {
+        alert("El archivo de tipo " + extensiones + " no es válido");
+    } else {
+        alert("El archivo de tipo " + extensiones + " es válido");
     }
 }
+cardifyimg.extension();
 
-extension();
 
-
-//module.exports = extension;
+module.exports = cardifyimg;
