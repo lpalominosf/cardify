@@ -10,7 +10,8 @@ Cardify corresponde a un plugin de JQuery, el cual nos permite reemplazar una im
 
 * Utilizamos WhatsApp para poder mantenernos conectadas en todo momento y así tener una comunicación clara al momento de realizar cualquier cambio en el proyecto o actualizaciones.
 
-## Requerimientos técnicos
+## Requerimientos Técnicos
+
 
 El proyecto fue realizado con los siguientes recursos: _(aún en definición)_
 
