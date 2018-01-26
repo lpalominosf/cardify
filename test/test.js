@@ -33,3 +33,11 @@ describe('comprobar extension', function() {
 
 });
 
+/*describe('comprobar etiqueta', function() {
+
+  it('debería devolver true para etiquetas figure', () => {
+    chai.assert.equal(cardify.etiqueta('<figure>'), true);
+  });
+
+});*/
+

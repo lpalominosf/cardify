@@ -5,10 +5,9 @@ $(document).ready(function() {
     $('.container').cardify({});
 });
 //plug-in de cardify
-
+//const cardifydescription = {};
 (function($) {
     $.fn.cardify = function() {
-
         $('img').wrap('<figure></figure>');
         $('img').map(function() {
             $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
@@ -43,6 +42,7 @@ $(document).ready(function() {
         })
     }
 })($);
+//cardifydescription.etiqueta();
 //$('img').hover(function(){
 // var atributo = $(this).attr("alt");
 // $(this).wrap('<figure></figure>');
