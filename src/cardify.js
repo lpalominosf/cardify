@@ -13,8 +13,10 @@ $(document).ready(function() {
             $('img').map(function() {
                 $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
                 $('img').css({
-                    'width': '400px',
+                    'width': '200px',
+                    'height': 'auto',
                     'clear': 'left',
+                    'display': 'inline-block',
                     'margin-bottom': '1px',
                     'margin-right': '10px'
                 });
@@ -30,7 +32,7 @@ $(document).ready(function() {
             $('figcaption').css({
                 'background-color': 'black',
                 'color': 'white',
-                'max-width': '400px',
+                'max-width': '200px',
                 'font-size': '10px',
                 'display': 'block',
                 'float': 'left',
@@ -41,7 +43,7 @@ $(document).ready(function() {
         };
         estilos();
 
-        function hover(){
+        function hover() {
             $('figure').each(function() {
                 $(this).hover(function() {
                     $('figcaption').css('opacity', '1');
@@ -50,30 +52,36 @@ $(document).ready(function() {
                 });
             });
         };
-       hover();
+        hover();
     }
 })($);
 
 const cardifyimg = {};
 cardifyimg.extension = function(img) {
-    const archivo = $(".img").attr('src');
-    const extensiones = archivo.substring(archivo.lastIndexOf("."));
-    if (extensiones != ".jpg" & extensiones != ".png" & extensiones != ".jpeg") {
-        //alert("El archivo de tipo " + extensiones + " no es válido");
-    } else {
-        //alert("El archivo de tipo " + extensiones + " es válido");
-    }
+    const imagen = $("img");
+    const archivo = $("img").attr('src');
+    const cadaArchivo = $(imagen).each(function() {
+        const extensiones = archivo.substring(archivo.lastIndexOf("."));
+        if (extensiones != ".jpg" & extensiones != ".png" & extensiones != ".gif") {
+            /*alert("El archivo de tipo " + extensiones + " no es válido");*/
+        } else {
+            /*alert("El archivo de tipo " + extensiones + " es válido");*/
+        }
+    })
 }
 cardifyimg.extension();
 
 cardifyimg.alt = function(alt) {
-    const atributo = $(".img").attr('alt');
-    if (atributo == "") {
-        //alert('no lo tiene');
-    } else {
-        //alert('lo tiene');
-    }
-}
-cardifyimg.alt();
+        const imagen = $("img");
+        const atributo = $("img").attr('alt');
+        const cadaArchivo = $(imagen).each(function() {
+                if (atributo == "") {
+                    /*alert('Archivo no contiene atributo alt');*/
+                } else {
+                    /*alert('Archivo si contiene atributo alt');*/
+                }
+            });
+        };
+        cardifyimg.alt();
 
 module.exports = cardifyimg;
