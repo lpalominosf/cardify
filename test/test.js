@@ -37,9 +37,17 @@ describe('comprobar si alt es un string', () => {
   });
 });
 
+/*  describe('comprobar etiqueta', function() {
+ *    it('debería devolver true para etiquetas figure', () => {
+ *      chai.assert.equal(cardify.etiqueta('<figure>'), true);
+ *    });
+ *  });
+ */
+
 describe('comprobar si alt está vacio', () => {
   it('alt no esta vacio', () => {
     var length = ($('img').attr('alt').length);
     expect($('img').attr('alt')).to.have.length(length);
   });
 });
+
