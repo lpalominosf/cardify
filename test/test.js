@@ -31,8 +31,8 @@ describe('comprobar extension', () => {
   });
 });
 
-describe('comprobar si alt está vacío', () => {
-  it('alt está vacío', () => {
-    expect('alt').to.have.length(3);
+describe('comprobar si alt es un string', () => {
+  it('alt es un string', () => {
+    expect('alt').to.be.a('string');
   });
 })
