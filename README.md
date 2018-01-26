@@ -5,6 +5,9 @@
 * **Unidad:** _Producto final_
 
 ***
+Se prsenta cardify es un  plugin que localiza en un contenedor todas las etiquetas de un contenedor y les aplica el efecto hover
+
+para ejecutar el plugin se debe colocar el nombre de la función  en el contenedor
 
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
