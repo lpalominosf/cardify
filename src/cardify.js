@@ -56,6 +56,16 @@ $(document).ready(function() {
     }
 })($);
 
+/*
+ * cardifydescription.etiqueta();
+ * $('img').hover(function() {
+ *   var atributo = $(this).attr("alt");
+ *    $(this).wrap('<figure></figure>');
+ *    $(this).append('<figcaption> +'
+ *      atributo '+<figcaption>');
+ *  });
+ */
+
 const cardifyimg = {};
 cardifyimg.extension = function(img) {
     const imagen = $("img");
@@ -67,21 +77,21 @@ cardifyimg.extension = function(img) {
         } else {
             /*alert("El archivo de tipo " + extensiones + " es válido");*/
         }
-    })
-}
+    });
+};
 cardifyimg.extension();
 
 cardifyimg.alt = function(alt) {
-        const imagen = $("img");
-        const atributo = $("img").attr('alt');
-        const cadaArchivo = $(imagen).each(function() {
-                if (atributo == "") {
-                    /*alert('Archivo no contiene atributo alt');*/
-                } else {
-                    /*alert('Archivo si contiene atributo alt');*/
-                }
-            });
-        };
-        cardifyimg.alt();
+    const imagen = $("img");
+    const atributo = $("img").attr('alt');
+    const cadaArchivo = $(imagen).each(function() {
+        if (atributo == "") {
+            /*alert('Archivo no contiene atributo alt');*/
+        } else {
+            /*alert('Archivo si contiene atributo alt');*/
+        }
+    });
+};
+cardifyimg.alt();
 
 module.exports = cardifyimg;

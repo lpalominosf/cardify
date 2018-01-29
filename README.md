@@ -11,6 +11,25 @@ imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
+Plugin:Cardify
+
+Descripción:
+Cardify es un impresionante efecto de hover impulsado por puro js, el mismo permite buscar  imágenes en un contenedor de una manera simple y flexible, encapsulando todas las etiquetas (`<img>`) dentro de elementos  `<figure>`, ademas de crear un `<figcaption>` por cada imagen con el texto que contiene el atributo `alt` de la misma. Es fácil de usar y rápido de configurar y de facíl adapción  según sus necesidades. 
+
+
+Implementación a través de npm:
+
+1-Descargar cardify desde su propio módulo, utilizando algo como Node.js. Este es npm install el comportamiento predeterminado.
+
+2- El paquete  cardify se puede descargar con el comando:> npm install <package_name>
+
+3- Esto creará el node_modulesdirectorio en su directorio actual  y descargará el paquete cardify a ese directorio.
+
+4- Para confirmar que npm install funcionó correctamente, verifique que node_modules exista un directorio y que contenga un directorio para el paquete de cardify que instaló.
+
+
+Desarrolladorres: Paz Autum y Gabriela Castillo
+
 ## Flujo de trabajo
 
 1. Se realizó un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
