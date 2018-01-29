@@ -71,12 +71,12 @@ Y listo! ya estás preparado para usar browserify.
 ## Herramientas
 
 **Desarrollo:**
-    *browserify: 15.2.0
-    *chai: 4.1.2
-    *jquery: 3.3.1
-    *jsdom: 11.6.1
-    *mocha: 5.0.0
+* browserify: 15.2.0
+* chai: 4.1.2
+* jquery: 3.3.1
+* jsdom: 11.6.1
+* mocha: 5.0.0
 
 **Producción:**
-    *babel-cli: 6.26.0
-    *eslint: 4.16.0
+* babel-cli: 6.26.0
+* eslint: 4.16.0
