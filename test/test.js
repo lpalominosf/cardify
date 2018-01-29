@@ -26,3 +26,9 @@ describe('Comprobar si alt tiene una descripción', () => {
     expect($('img').attr('alt')).to.have.length(empty);
   });
 });
+
+describe('comprobar si alt está definido como string', () => {
+  it('alt está definido como string', () => {
+    expect($('img').attr('alt')).to.be.a('string');
+  });
+});
