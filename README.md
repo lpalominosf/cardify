@@ -14,7 +14,7 @@ con el texto del atributo `alt` de la imagen.
 Plugin:Cardify
 
 Descripción:
-Se presenta cardify es un  plugin que sirve para incorporar un hover a todas las imagenes que localiza dentro de un contenedor.
+Cardify es un impresionante efecto de hover impulsado por puro js, el mismo permite buscar  imágenes en un contenedor de una manera simple y flexible, encapsulando todas las etiquetas (`<img>`) dentro de elementos  `<figure>`, ademas de crear un `<figcaption>` por cada imagen con el texto que contiene el atributo `alt` de la misma. Es fácil de usar y rápido de configurar y de facíl adapción  según sus necesidades. 
 
 
 Implementación:
@@ -31,7 +31,7 @@ O de la siguiente manera:
 
 Una vez que tengamos instalado el plugin se aplicará el efecto hover en la imagen con su respectiva descripción  en la parte inferior, la cual se obtendrá  del atributo alt correspondiente a la imagen.
 
-Autores: Paz Autum y Gabriela Castillo
+Desarrolladorres: Paz Autum y Gabriela Castillo
 
 ## Flujo de trabajo
 
