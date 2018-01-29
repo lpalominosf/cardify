@@ -17,22 +17,15 @@ Descripción:
 Cardify es un impresionante efecto de hover impulsado por puro js, el mismo permite buscar  imágenes en un contenedor de una manera simple y flexible, encapsulando todas las etiquetas (`<img>`) dentro de elementos  `<figure>`, ademas de crear un `<figcaption>` por cada imagen con el texto que contiene el atributo `alt` de la misma. Es fácil de usar y rápido de configurar y de facíl adapción  según sus necesidades. 
 
 
-Implementación:
+Implementación a través de npm:
 
-1-Descargue el paquete desde su propio módulo, utilizando algo como Node.js. Este es npm install el comportamiento predeterminado.
+1-Descargar cardify desde su propio módulo, utilizando algo como Node.js. Este es npm install el comportamiento predeterminado.
 
-2- Un paquete se puede descargar con el comando:> npm install <package_name>
+2- El paquete  cardify se puede descargar con el comando:> npm install <package_name>
 
-3- Esto creará el node_modulesdirectorio en su directorio actual (si aún no existe uno) y descargará el paquete a ese directorio.
+3- Esto creará el node_modulesdirectorio en su directorio actual  y descargará el paquete cardify a ese directorio.
 
-
-
-O de la siguiente manera:
-1- Ingresando  a la pagina www.npmjs.com.
-2- Colocar  en el buscador cardify
-3- Una vez en la página copiar el comando que esta en el lado superior derecho
-4. Posicionarse en la consola en la carpeta del proyecto y anexar el comando que se obtuvo en el punto anterior
-
+4- Para confirmar que npm install funcionó correctamente, verifique que node_modules exista un directorio y que contenga un directorio para el paquete de cardify que instaló.
 
 
 Desarrolladorres: Paz Autum y Gabriela Castillo
