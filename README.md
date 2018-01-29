@@ -14,24 +14,21 @@ con el texto del atributo `alt` de la imagen.
 Plugin:Cardify
 
 Descripción:
-Se presenta cardify es un  plugin que sirve para incorporar un hover a todas las imagenes que localiza dentro de un contenedor.
+Cardify es un impresionante efecto de hover impulsado por puro js, el mismo permite buscar  imágenes en un contenedor de una manera simple y flexible, encapsulando todas las etiquetas (`<img>`) dentro de elementos  `<figure>`, ademas de crear un `<figcaption>` por cada imagen con el texto que contiene el atributo `alt` de la misma. Es fácil de usar y rápido de configurar y de facíl adapción  según sus necesidades. 
 
 
-Implementación:
-Para ejecutar el plugin el usuario  debe colocar el nombre de la función  en el contenedor de las imagenes donde desea aplicar el efecto.
+Implementación a través de npm:
 
-Para instalarlo el usuario debe anexar en el contenedor donde desea que se active el plugin  el nombre de la función cardify
+1-Descargar cardify desde su propio módulo, utilizando algo como Node.js. Este es npm install el comportamiento predeterminado.
+
+2- El paquete  cardify se puede descargar con el comando:> npm install <package_name>
+
+3- Esto creará el node_modulesdirectorio en su directorio actual  y descargará el paquete cardify a ese directorio.
+
+4- Para confirmar que npm install funcionó correctamente, verifique que node_modules exista un directorio y que contenga un directorio para el paquete de cardify que instaló.
 
 
-O de la siguiente manera:
-1- Ingresando  a la pagina www.npmjs.com.
-2- Colocar  en el buscador cardify
-3- Una vez en la página copiar el comando que esta en el lado superior derecho
-4. Posicionarse en la consola en la carpeta del proyecto y anexar el comando que se obtuvo en el punto anterior
-
-Una vez que tengamos instalado el plugin se aplicará el efecto hover en la imagen con su respectiva descripción  en la parte inferior, la cual se obtendrá  del atributo alt correspondiente a la imagen.
-
-Autores: Paz Autum y Gabriela Castillo
+Desarrolladorres: Paz Autum y Gabriela Castillo
 
 ## Flujo de trabajo
 
