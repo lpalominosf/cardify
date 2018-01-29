@@ -1,7 +1,5 @@
 # Cardify
 
-#### Plugin: Cardify 
-
 ## Descripción:
 
 ### ¿Cómo funciona?
