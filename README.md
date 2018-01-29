@@ -18,9 +18,13 @@ Cardify es un impresionante efecto de hover impulsado por puro js, el mismo perm
 
 
 Implementación:
-Para ejecutar el plugin el usuario  debe colocar el nombre de la función  en el contenedor de las imagenes donde desea aplicar el efecto.
 
-Para instalarlo el usuario debe anexar en el contenedor donde desea que se active el plugin  el nombre de la función cardify
+1-Descargue el paquete desde su propio módulo, utilizando algo como Node.js. Este es npm install el comportamiento predeterminado.
+
+2- Un paquete se puede descargar con el comando:> npm install <package_name>
+
+3- Esto creará el node_modulesdirectorio en su directorio actual (si aún no existe uno) y descargará el paquete a ese directorio.
+
 
 
 O de la siguiente manera:
@@ -29,7 +33,7 @@ O de la siguiente manera:
 3- Una vez en la página copiar el comando que esta en el lado superior derecho
 4. Posicionarse en la consola en la carpeta del proyecto y anexar el comando que se obtuvo en el punto anterior
 
-Una vez que tengamos instalado el plugin se aplicará el efecto hover en la imagen con su respectiva descripción  en la parte inferior, la cual se obtendrá  del atributo alt correspondiente a la imagen.
+
 
 Desarrolladorres: Paz Autum y Gabriela Castillo
 
