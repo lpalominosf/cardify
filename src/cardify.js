@@ -2,7 +2,7 @@ const $ = require("jquery");
 
 $(document).ready(function() {
     //Llamando plug-in
-    $('.container').cardify({});
+    $('.cardify').cardify({});
 });
 //plug-in de cardify
 
@@ -13,12 +13,13 @@ $(document).ready(function() {
             $('img').map(function() {
                 $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
                 $('img').css({
-                    'width': '330px',
+                    'width': '100%',
                     'height': 'auto',
                     'clear': 'left',
                     'display': 'block',
                     'margin-bottom': '1px',
-                    'margin-right': '10px'
+                    'margin-right': '10px',
+                    'border-radius': '5px'
                 });
             });
         };
@@ -27,7 +28,9 @@ $(document).ready(function() {
         function estilos() {
             $('figure').css({
                 'position': 'relative',
-                'float': 'left'
+                'float': 'left',
+                'width': '50vh',
+                'height': 'auto'
             });
             $('figcaption').css({
                 'background-color': 'rgba(0,0,0,0.5)',
@@ -35,10 +38,14 @@ $(document).ready(function() {
                 'width': '100%',
                 'height':'100%',
                 'font-size': '50px',
-                'display': 'block',
+                'display': 'flex',
+                'justify-content': 'center',
+                'align-items': 'center',
                 'position': 'absolute',
                 'top': '0',
-                'opacity': '0'
+                'opacity': '0',
+                'border-radius': '5px'
+
             });
         };
         estilos();
@@ -54,15 +61,7 @@ $(document).ready(function() {
     }
 })($);
 
-/*
- * cardifydescription.etiqueta();
- * $('img').hover(function() {
- *   var atributo = $(this).attr("alt");
- *    $(this).wrap('<figure></figure>');
- *    $(this).append('<figcaption> +'
- *      atributo '+<figcaption>');
- *  });
- */
+//testing
 
 const cardifyimg = {};
 cardifyimg.extension = function(img) {

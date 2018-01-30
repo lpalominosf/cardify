@@ -15,20 +15,20 @@ Cardify es un plugin de jQuery que aplica un efecto de hover a tus imágenes env
 <script src="dist/app.js"></script>
 ```
 
-## Uso
+### Uso
 
 #### .js
 ```
 /*
- * `container` es el selector del contenedor donde se buscarán todas las
+ * 'cardify' es el selector del contenedor donde se buscarán todas las
  * imágenes a ser procesadas.
  */
  
-$(container).cardify({});
+$(.cardify).cardify({});
 var cardify = require('cardify');
 ```
 
-1. Para que el plugin funcione en tu proyecto primero debes inicializar tu proyecto en la terminal con el comando
+1. Para que el plugin funcione primero debes inicializar tu proyecto en la terminal con el comando
 
    `npm init`
 
@@ -44,7 +44,7 @@ var cardify = require('cardify');
 
    `browserify src/app.js -o dist/app.js`
 
-4. Enlaza el archivo 'Browserificado en tu .html'
+4. Enlaza el archivo 'Browserificado' en tu .html
 
    `<script src="dist/app.js"></script>`
 
@@ -52,10 +52,10 @@ var cardify = require('cardify');
 
    `var cardify = require('cardify');`
 
-5. Finalmente, recuerda envolver tus imagenes dentro de una etiqueta con clase `container` y asignarle el atributo `alt` como en el siguiente ejemplo.
+5. Finalmente, recuerda poner tus imagenes dentro de una etiqueta contenedora con clase `cardify` y asignarle el atributo `alt` como en el siguiente ejemplo.
 
    ```
-   <div class='container'>
+   <div class='cardify'>
       <img src='https://pbs.twimg.com/media/ClFixn2UoAA85OZ.jpg' alt='Osito'>
    </div>
 

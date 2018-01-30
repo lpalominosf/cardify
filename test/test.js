@@ -7,12 +7,10 @@ let dom = new JSDOM('<!DOCTYPE html><html lang="en">' +
     '<head><meta charset="UTF-8"><title>Cardify</title>' +
     '</head><body><div class="container"><h2>Prueba 1</h2>' +
     '<img src="https://pbs.twimg.com/media/ClFixn2UoAA85OZ.jpg" alt="Osito">' +
-    '<img class="img" src="http://japonpop.japonshop.com/wp-content/uploads/' +
-    '2014/10/arte-latte-japon-gatos-japonshop03.png" alt="gato">' +
     '<img src="https://78.media.tumblr.com/7abd3b7ae58a290dbf509e9c' +
     '39427f47/tumblr_mjgkiuTCQJ1s7mg7ko5_500.gif" alt="León">' +
-    '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">' +
-    '</script><script src="node_modules/jquery/dist/jquery.min.js">' +
+    '<img class="img" src="http://japonpop.japonshop.com/wp-content/uploads/' +
+    '2014/10/arte-latte-japon-gatos-japonshop03.png" alt="gato">' +
     '</script><script src="lib/main.js"></script></body></html>');
 const {
     window
@@ -41,13 +39,6 @@ describe('comprobar si alt es un string', () => {
         expect($('img').attr('alt')).to.be.a('string');
     });
 });
-
-/*  describe('comprobar etiqueta', function() {
- *    it('debería devolver true para etiquetas figure', () => {
- *      chai.assert.equal(cardify.etiqueta('<figure>'), true);
- *    });
- *  });
- */
 
 describe('comprobar si alt está vacio', () => {
     it('alt no esta vacio', () => {
