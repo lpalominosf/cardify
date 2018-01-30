@@ -1,6 +1,6 @@
 {
   "name": "cardify",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Proyecto laboratoria",
   "main": "lib/main.js",
   "scripts": {
