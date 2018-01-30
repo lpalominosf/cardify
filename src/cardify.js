@@ -28,13 +28,15 @@ $(document).ready(function() {
         function estilos() {
             $('figure').css({
                 'position': 'relative',
-                'float': 'left'
+                'float': 'left',
+                'width': '300px',
+                'height': 'auto'
             });
             $('figcaption').css({
                 'background-color': 'rgba(0,0,0,0.5)',
                 'color': 'white',
                 'width': '100%',
-                'height': '100%',
+                'height':'100%',
                 'font-size': '50px',
                 'display': 'flex',
                 'justify-content': 'center',
