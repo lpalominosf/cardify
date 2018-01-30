@@ -1,7 +1,7 @@
 {
   "name": "cardify",
-  "version": "1.1.2",
-  "description": "Proyecto laboratoria",
+  "version": "1.2.2",
+  "description": "Cardify es un plugin de jQuery que aplica un efecto de hover a tus imágenes envolviendolas en una etiqueta `<figure>`, rescatando su descripción del atributo `alt` e insertando el texto en una etiqueta `<figcaption>`. Es fácil de usar y rápido de configurar.",
   "main": "lib/main.js",
   "scripts": {
     "test": "mocha test --reporter nyan",
