@@ -45,7 +45,6 @@ $(document).ready(function() {
 
         function hover() {
             $('figure figcaption').hover(function() {
-
                 $(this).css('opacity', '1');
             }, function() {
                 $(this).css('opacity', '0');
