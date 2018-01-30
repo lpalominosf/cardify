@@ -6,20 +6,17 @@
 
 ***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
 
 Plugin:Cardify
 
 Descripción:
-Cardify es un impresionante efecto de hover impulsado por puro js, el mismo permite buscar  imágenes en un contenedor de una manera simple y flexible, encapsulando todas las etiquetas (`<img>`) dentro de elementos  `<figure>`, ademas de crear un `<figcaption>` por cada imagen con el texto que contiene el atributo `alt` de la misma. Es fácil de usar y rápido de configurar y de facíl adapción  según sus necesidades. 
+Cardify es un impresionante efecto de hover impulsado por código js, el mismo permite buscar  imágenes en un contenedor de una manera simple y flexible, encapsulando todas las etiquetas (`<img>`) dentro de elementos  `<figure>`, ademas de crear un `<figcaption>` por cada imagen con el texto que contiene el atributo `alt` de la misma. Es fácil de usar y rápido de configurar y de facíl adapción  según sus necesidades. 
 
 
 Implementación a través de npm:
 
-1-Descargar cardify desde su propio módulo, utilizando algo como Node.js. Este es npm install el comportamiento predeterminado.
+1-Descargar cardify desde su propio módulo, utilizando  No
+de.js. Este es npm install el comportamiento predeterminado.
 
 2- El paquete  cardify se puede descargar con el comando:> npm install <package_name>
 
@@ -73,8 +70,17 @@ $(container).cardify({});
 
 ## Herramientas
 
-**Desarrollo:**
-* jQuery ~v.3.2.1.
+**Dependencias Producción:**
+* "browserify": "^15.2.0",
+* "chai": "^4.1.2",
+* "jquery": "^3.3.1",
+* "jsdom": "^11.6.1",
+* "mocha": "^5.0.0"
 
-**Producción:**
-* Editor de texto: Sublime Text 3.
+**Dependencias de Desarrollo:**
+* "eslint": "^4.16.0",
+* "eslint-config-google": "^0.9.1"
+
+
+
+
