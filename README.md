@@ -14,7 +14,6 @@ Cardify es un plugin de jQuery que aplica un efecto de hover a tus imágenes env
 ```
 <script src="dist/app.js"></script>
 ```
-
 ### Uso
 
 #### .js
@@ -72,3 +71,4 @@ Y listo! ya estás preparado para usar browserify.
 **Producción:**
 * babel-cli: 6.26.0
 * eslint: 4.16.0
+
