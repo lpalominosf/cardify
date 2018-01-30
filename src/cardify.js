@@ -30,9 +30,10 @@ $(document).ready(function() {
                 'float': 'left'
             });
             $('figcaption').css({
-                'background-color': 'black',
+                'background-color': 'rgba(0,0,0,0.5)',
                 'color': 'white',
-                'max-width': '100%',
+                'width': '100%',
+                'height':'100%',
                 'font-size': '50px',
                 'display': 'block',
                 'position': 'absolute',
@@ -43,12 +44,11 @@ $(document).ready(function() {
         estilos();
 
         function hover() {
-            $('figure').each(function() {
-                $(this).hover(function() {
-                    $('figcaption').css('opacity', '1');
-                }, function() {
-                    $('figcaption').css('opacity', '0');
-                });
+            $('figure figcaption').hover(function() {
+
+                $(this).css('opacity', '1');
+            }, function() {
+                $(this).css('opacity', '0');
             });
         };
         hover();
