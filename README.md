@@ -1,4 +1,4 @@
-# Cardify
+# Cardify 
 
 ## Descripción:
 
@@ -19,12 +19,6 @@ Cardify es un plugin de jQuery que aplica un efecto de hover a tus imágenes env
 
 #### .js
 ```
-/*
- * 'cardify' es el selector del contenedor donde se buscarán todas las
- * imágenes a ser procesadas.
- */
- 
-$(.cardify).cardify({});
 var cardify = require('cardify');
 ```
 
