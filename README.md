@@ -62,10 +62,10 @@ Y listo! ya estás preparado para usar browserify.
 ## Herramientas
 
 **Producción:**
-* browserify: 15.2.0
 * jquery: 3.3.1
 
 **Desarrollo:**
+* browserify: 15.2.0
 * chai: 4.1.2
 * mocha: 5.0.0
 * eslint: 4.16.0
