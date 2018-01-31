@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 //testing
 
-const cardifyimg = {};
+let cardifyimg = {};
 cardifyimg.extension = function(img) {
     const imagen = $("img");
     const archivo = $("img").attr('src');
