@@ -1,7 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 const CARDIFY = require('./src/cardify');
 
-
 },{"./src/cardify":3}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
@@ -10382,20 +10381,66 @@ $(document).ready(function() {
       if (allImages[i].alt && allImages[i].alt.length > 0) {
         var imgAlt = allImages[i].alt;
         $(allImages[i]).wrap('<div class="wrapper"/>').
-          wrap('<figure class="">').
-          after('<figcaption class="hide overlay">' + imgAlt +
+          wrap('<figure>').
+          after('<figcaption style="display : none" >' + imgAlt +
           '</figcaption></figure></div>');
       }
     }
     $('figure').hover(
       function() {
-        $(this).find('figcaption').removeClass('hide');
-        $(this).find('figcaption').addClass('text');
+        $(this).find('figcaption').css({
+          'display': 'block'
+        });
+        $(this).find('figcaption').css({
+          'background-color': 'rgb(76, 160, 175)',
+          'color': 'white',
+          'font-size': '16px',
+          'padding': '16px 32px',
+          'transition': 'ease',
+          'opacity': '0',
+          'position': 'absolute',
+          'top': '50%',
+          'left': '50%',
+          'transform': 'translate(-50%, -50%)',
+          '-ms-transform': 'translate(-50%, -50%)',
+          'text-align': 'center',
+          'opacity': '1'
+        });
+        $(this).find('.imgToWrap').css({
+          'opacity': '0.3'
+        });
+        $(this).find('.wrapper').css({
+          'width': '100%',
+          'height': 'auto',
+          'overflow': 'hidden',
+          'position': 'relative'
+        });
       },
       function() {
-        $(this).find('figcaption').removeClass('text');
-        $(this).find('figcaption').addClass('hide');
-      });
+        $(this).find('figcaption').css({ 'display': 'none' });
+        $(this).find('figcaption').css({
+          'background-color': '',
+          'color': '',
+          'font-size': '',
+          'padding': ' ',
+          'transition': '',
+          'opacity': '',
+          'position': '',
+          'top': '',
+          'left': '',
+          'transform': '',
+          '-ms-transform': '',
+          'text-align': ''
+        });
+        $(this).find('.wrapper').css({
+          'width': '',
+          'height': '',
+          'overflow': '',
+          'position': ''
+        });
+        $(this).find('.imgToWrap').css({ 'opacity': '' });
+      }
+    );
   };
 })($);
 },{"jquery":2}]},{},[1]);

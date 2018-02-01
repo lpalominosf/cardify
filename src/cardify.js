@@ -11,19 +11,65 @@ $(document).ready(function() {
       if (allImages[i].alt && allImages[i].alt.length > 0) {
         var imgAlt = allImages[i].alt;
         $(allImages[i]).wrap('<div class="wrapper"/>').
-          wrap('<figure class="">').
-          after('<figcaption class="hide overlay">' + imgAlt +
+          wrap('<figure>').
+          after('<figcaption style="display : none" >' + imgAlt +
           '</figcaption></figure></div>');
       }
     }
     $('figure').hover(
       function() {
-        $(this).find('figcaption').removeClass('hide');
-        $(this).find('figcaption').addClass('text');
+        $(this).find('figcaption').css({
+          'display': 'block'
+        });
+        $(this).find('figcaption').css({
+          'background-color': 'rgb(76, 160, 175)',
+          'color': 'white',
+          'font-size': '16px',
+          'padding': '16px 32px',
+          'transition': 'ease',
+          'opacity': '0',
+          'position': 'absolute',
+          'top': '50%',
+          'left': '50%',
+          'transform': 'translate(-50%, -50%)',
+          '-ms-transform': 'translate(-50%, -50%)',
+          'text-align': 'center',
+          'opacity': '1'
+        });
+        $(this).find('.imgToWrap').css({
+          'opacity': '0.3'
+        });
+        $(this).find('.wrapper').css({
+          'width': '100%',
+          'height': 'auto',
+          'overflow': 'hidden',
+          'position': 'relative'
+        });
       },
       function() {
-        $(this).find('figcaption').removeClass('text');
-        $(this).find('figcaption').addClass('hide');
-      });
+        $(this).find('figcaption').css({ 'display': 'none' });
+        $(this).find('figcaption').css({
+          'background-color': '',
+          'color': '',
+          'font-size': '',
+          'padding': ' ',
+          'transition': '',
+          'opacity': '',
+          'position': '',
+          'top': '',
+          'left': '',
+          'transform': '',
+          '-ms-transform': '',
+          'text-align': ''
+        });
+        $(this).find('.wrapper').css({
+          'width': '',
+          'height': '',
+          'overflow': '',
+          'position': ''
+        });
+        $(this).find('.imgToWrap').css({ 'opacity': '' });
+      }
+    );
   };
 })($);
