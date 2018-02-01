@@ -41,11 +41,11 @@ var cardify = require('cardify');
 
    `<script src="dist/app.js"></script>`
 
-4. En tu archivo .js principal pega el siguiente código
+5. En tu archivo .js principal pega el siguiente código
 
    `var cardify = require('cardify');`
 
-5. Finalmente, recuerda poner tus imagenes dentro de una etiqueta contenedora con clase `cardify` y asignarle el atributo `alt` como en el siguiente ejemplo.
+6. Finalmente, recuerda poner tus imagenes dentro de una etiqueta contenedora con clase `cardify` y asignarle el atributo `alt` como en el siguiente ejemplo.
 
    ```
    <div class='cardify'>
@@ -53,9 +53,13 @@ var cardify = require('cardify');
    </div>
 
    ```
+
+**Ten en cuenta que el comando `browserify src/app.js -o dist/app.js` del paso número 3 deberás repetirlo cada vez que actualices el plugin desde tu terminal**
+
 Y listo! ya estás preparado para usar browserify.
 
 ## Ejemplos
+
 ![alt text](http://www.grupojega.cl/images/hover.gif)
 
 ## Herramientas
