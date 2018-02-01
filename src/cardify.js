@@ -29,7 +29,7 @@ $(document).ready(function() {
             $('figure').css({
                 'position': 'relative',
                 'display': 'inline-block',
-                'width': '50vh',
+                'width': '300px',
                 'height': 'auto'
             });
             $('figcaption').css({
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 //testing
 
-const cardifyimg = {};
+let cardifyimg = {};
 cardifyimg.extension = function(img) {
     const imagen = $("img");
     const archivo = $("img").attr('src');
