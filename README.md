@@ -58,7 +58,7 @@ var cardify = require('cardify');
 
 Y listo! ya estás preparado para usar browserify.
 
-## Ejemplos
+## Ejemplo
 
 ![Ejemplo Cardify](http://www.grupojega.cl/images/gifcardify.gif)
 
