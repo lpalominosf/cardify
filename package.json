@@ -2,9 +2,10 @@
   "name": "cardify",
   "version": "1.0.0",
   "description": "proyecto cardify, librería de jquery",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter nyan",
+    "tobrowser": "browserify index.js -o dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "jsdom": "^11.6.1",
-    "materialize-css": "^0.100.2"
+    "materialize-css": "^0.100.2",
+    "uniq": "^1.0.1"
   }
 }
