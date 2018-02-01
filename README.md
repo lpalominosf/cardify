@@ -60,7 +60,7 @@ var cardify = require('cardify');
 
 ### **Ten en cuenta que el comando `browserify src/app.js -o dist/app.js` del paso número 3 deberás repetirlo cada vez que actualices el plugin desde tu terminal**
 
-## Y listo! ya estás preparado para usar browserify.
+## Y listo! ya estás preparado para usar cardify.
 
 ## Ejemplo
 
