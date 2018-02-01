@@ -1,6 +1,4 @@
 language: node_js
 node_js:
   - 'stable'
-script: 
-  - 'babel src -d lib'
-  - 'browserify src/cardify.js -o lib/main.js'
+script:
