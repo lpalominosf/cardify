@@ -9,9 +9,11 @@ $(document).ready(function() {
 (function($) {
     $.fn.cardify = function() {
         function envolver() {
-            $('img').wrap('<figure></figure>');
-            $('img').map(function() {
-                $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
+            $('.cardify').map(function() {
+                $('img').wrap('<figure></figure>');
+                $('img').map(function() {
+                    $(this).after('<figcaption>' + $(this).attr('alt') + '</figcaption>');
+                });
                 $('img').css({
                     'width': '100%',
                     'height': 'auto',
@@ -36,7 +38,7 @@ $(document).ready(function() {
                 'background-color': 'rgba(0,0,0,0.5)',
                 'color': 'white',
                 'width': '100%',
-                'height':'100%',
+                'height': '100%',
                 'font-size': '50px',
                 'display': 'flex',
                 'justify-content': 'center',
@@ -65,15 +67,17 @@ $(document).ready(function() {
 
 let cardifyimg = {};
 cardifyimg.extension = function(img) {
-    const imagen = $("img");
-    const archivo = $("img").attr('src');
-    const cadaArchivo = $(imagen).each(function() {
-        const extensiones = archivo.substring(archivo.lastIndexOf("."));
-        if (extensiones != ".jpg" & extensiones != ".png" & extensiones != ".gif") {
-            /*alert("El archivo de tipo " + extensiones + " no es válido");*/
-        } else {
-            /*alert("El archivo de tipo " + extensiones + " es válido");*/
-        }
+    $(".cardify").each(function(img) {
+        const imagen = $("img");
+        const archivo = $("img").attr('src');
+        const cadaArchivo = $(imagen).each(function() {
+            const extensiones = archivo.substring(archivo.lastIndexOf("."));
+            if (extensiones != ".jpg" & extensiones != ".png" & extensiones != ".gif") {
+                /*alert("El archivo de tipo " + extensiones + " no es válido");*/
+            } else {
+                /*alert("El archivo de tipo " + extensiones + " es válido");*/
+            }
+        });
     });
 };
 cardifyimg.extension();
