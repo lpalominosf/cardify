@@ -28,7 +28,7 @@ $(document).ready(function() {
         function estilos() {
             $('figure').css({
                 'position': 'relative',
-                'float': 'left',
+                'display': 'inline-block',
                 'width': '50vh',
                 'height': 'auto'
             });
