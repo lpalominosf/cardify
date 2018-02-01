@@ -1,4 +1,4 @@
-const $ = require('jquery');
+//const $ = require('jquery');
 $(document).ready(function() {
   $('.imgToWrap').cardify({});
 });
@@ -12,7 +12,7 @@ $(document).ready(function() {
         var imgAlt = allImages[i].alt;
         $(allImages[i]).wrap('<div class="wrapper"/>').
           wrap('<figure>').
-          after('<figcaption style="display : none" >' + imgAlt +
+          after('<figcaption style="display:none" >' + imgAlt +
           '</figcaption></figure></div>');
       }
     }
@@ -21,11 +21,14 @@ $(document).ready(function() {
         $(this).find('figcaption').css({
           'display': 'block'
         });
+        $(this).find('img').css({
+          'cursor': 'pointer'
+        });
         $(this).find('figcaption').css({
           'background-color': 'rgb(76, 160, 175)',
           'color': 'white',
-          'font-size': '16px',
-          'padding': '16px 32px',
+          'font-size': '1em',
+          'padding': '1em 2em',
           'transition': 'ease',
           'opacity': '0',
           'position': 'absolute',
@@ -34,7 +37,8 @@ $(document).ready(function() {
           'transform': 'translate(-50%, -50%)',
           '-ms-transform': 'translate(-50%, -50%)',
           'text-align': 'center',
-          'opacity': '1'
+          'opacity': '1',
+          'cursor': 'pointer'
         });
         $(this).find('.imgToWrap').css({
           'opacity': '0.3'

@@ -1,1 +1,1 @@
-const CARDIFY = require('./src/cardify');
+const CARDIFY = require('./src/cardify.js');
