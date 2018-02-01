@@ -17,7 +17,7 @@ global.navigator = {
 };
 
 const $ = require('jquery');
-const cardify = require('../assets/js/app.js');
+const cardify = require('../src/cardify.js');
 var expect = require('chai').expect;
 
 describe('Comprobar si alt tiene una descripción', () => {

@@ -13,13 +13,13 @@ Cardify es un proyecto diseñado para Laboratoria, es una librería (plugin) de 
 ## Requerimientos Técnicos
 
 
-El proyecto fue realizado con los siguientes recursos: 
+El proyecto fue realizado con los siguientes recursos:
 
 * Dependencias de Producción
   - jQuery `~v.3.3.1`
   - Materialize `~v.0.100.2`
 
-  *Dependencias de Desarrollo
+* Dependencias de Desarrollo
   - Babel `~v.6.26.0`
   - Chai `~v.4.1.2`
   - Mocha `~v.5.0.0`
