@@ -60,7 +60,7 @@ Y listo! ya estás preparado para usar browserify.
 
 ## Ejemplos
 
-![alt text](http://www.grupojega.cl/images/gifcardify.gif)
+![Ejemplo Cardify](http://www.grupojega.cl/images/gifcardify.gif)
 
 ## Herramientas
 
