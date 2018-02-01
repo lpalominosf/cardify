@@ -60,7 +60,7 @@ Y listo! ya estás preparado para usar browserify.
 
 ## Ejemplos
 
-![alt text](http://www.grupojega.cl/images/hover.gif)
+![alt text](browserify src/app.js -o dist/app.js)
 
 ## Herramientas
 
