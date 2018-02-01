@@ -1,6 +1,6 @@
 const chai = require('chai');
 
-const jsdom = require("jsdom");
+const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 let dom = new JSDOM('!DOCTYPE html><html lang="en">' +
   '<head><meta charset ="UTF-8"><title>Proyecto Cardify</title>' +
@@ -17,7 +17,7 @@ global.navigator = {
 };
 
 const $ = require('jquery');
-const cardify = require("../assets/js/app.js");
+const cardify = require('../assets/js/app.js');
 var expect = require('chai').expect;
 
 describe('Comprobar si alt tiene una descripción', () => {
@@ -32,3 +32,4 @@ describe('comprobar si alt está definido como string', () => {
     expect($('img').attr('alt')).to.be.a('string');
   });
 });
+
