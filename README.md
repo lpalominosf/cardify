@@ -4,7 +4,7 @@
 
 ### ¿Cómo funciona?
 
-Cardify es un plugin de jQuery que aplica un efecto de hover a tus imágenes envolviendolas en una etiqueta `<figure>`,   rescatando su descripción del atributo `alt` e insertando el texto en una etiqueta `<figcaption>`. Es fácil de usar y rápido de configurar.
+Cardify es un plugin de jQuery que aplica un efecto de hover a tus imágenes envolviendolas en una etiqueta `<figure>`, rescatando su descripción del atributo `alt` e insertando el texto en una etiqueta `<figcaption>`. Es fácil de usar y rápido de configurar.
 
 ## Instalación
 
@@ -51,7 +51,6 @@ var cardify = require('cardify');
    <div class='cardify'>
       <img src='https://pbs.twimg.com/media/ClFixn2UoAA85OZ.jpg' alt='Osito'>
    </div>
-
    ```
 
 **Ten en cuenta que el comando `browserify src/app.js -o dist/app.js` del paso número 3 deberás repetirlo cada vez que actualices el plugin desde tu terminal**
