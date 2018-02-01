@@ -7,37 +7,68 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cardify</title>
   <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/cardify.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-  <section>
-    <nav>
-      <ul>
-        <li>
-          <a class="brand-logo center" href="index.html">Cardify</a>
-        </li>
-      </ul>
-    </nav>
-  </section>
-  <section>
-    <div class="imgToWrap container">
+  <div class="container">
+    <section>
+      <h2 class="center cardtittle">cardify.js</h2>
+      <hr>
+      <div class="description">
+        <p>cardify.js es un plugin de jQuery que se ejecuta en un <em>contenedor con la clase imageToWrap</em>, buscando todas las imágenes que encuentra dentro del contenedor y reemplazándolas por un nuevo elemento <span class="tagging">figure</span> que contiene la imagen además de un <span class="tagging">figcaption</span> con el texto del atributo alt de la imagen.</p>
+      </div> <!-- cierro description -->
+    </section>
+    <section>
+      <h4>Ejemplos de uso</h4>
+      <div class="imgToWrap">
+        <div class="row">
+          <div class="col s12 m6">
+            <img class="responsive-img" src="assets/img/condor_hembra.jpg" alt="Cóndor hembra" />
+          </div>
+          <div class="col s12 m6">
+            <img class="responsive-img" src="assets/img/milky_way.jpg" alt="Vía láctea" />
+          </div>
+        </div> <!-- cierro .row -->
+        <div class="row">
+          <div class="col s12 m6">
+            <img class="responsive-img" src="assets/img/milky_way.jpg" alt="Vía láctea" />
+          </div>
+          <div class="col s12 m6">
+            <img class="responsive-img" src="assets/img/condor_hembra.jpg" alt="Cóndor hembra" />
+          </div>
+        </div> <!-- cierro .row -->
+      </div> <!-- cierro .imgToWrap -->
+    </section>
+  </div> <!-- cierro container -->
+  <footer class="page-footer teal">
+    <div class="container">
       <div class="row">
-        <div class="col s6">
-          <img class="responsive-img" src="assets/img/condor_hembra.jpg" alt="condor hembra" />
+        <div class="col l6 s12">
+          <h5 class="white-text">Links de interés</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/NatyNatur">Natalia Castro</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/lpalominosf">Lorena Palominos</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/pinalef">Pamela Inalef</a></li>
+            </ul>
         </div>
-        <div class="col s6">
-          <img class="responsive-img" src="assets/img/milky_way.jpg" alt="via lactea" />
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Fotografías por </h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://www.flickr.com/photos/cesarcastrog/">César Castro</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col s6">
-          <img class="responsive-img" src="assets/img/milky_way.jpg" alt="via lactea" />
-        </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        <p class="grey-text text-lighten-4">cardify.js ha sido un proyecto para Laboratoria</p>
+        © 2018 Piolits
       </div>
     </div>
-    </div>
-  </section>
+  </footer>
+  <!-- scripts -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="assets/js/app.js"></script>
