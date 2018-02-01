@@ -1,4 +1,4 @@
 language: node_js
-node_js: 
+node_js:
   - "stable"
-script : 
+script: babel src -d lib
