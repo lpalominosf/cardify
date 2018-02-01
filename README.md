@@ -1,4 +1,9 @@
-# Cardify 
+[![GitHub issue age](https://img.shields.io/badge/Created-January%202018-yellow.svg?style=for-the-badge)](https://github.com/PazAutumn/cardify)
+
+
+# Cardify[![Build Status](https://travis-ci.org/PazAutumn/cardify.svg?branch=cardify)](https://travis-ci.org/PazAutumn/cardify)
+[![cardify version](https://img.shields.io/badge/Last%20version-1.4.5-yellow.svg?style=for-the-badge)](https://github.com/PazAutumn/cardify)
+[![autores](https://img.shields.io/badge/author-pazautumn%2C%20gabycasti-yellow.svg?style=for-the-badge)](https://github.com/PazAutumn/cardify)
 
 ## Descripción:
 
@@ -32,8 +37,8 @@ var cardify = require('cardify');
 3. Para que tu proyecto se vea en el navegador debes instalar [**Browserify**](http://browserify.org/) de manera global en tu computadora con el siguiente comando en tu terminal
 
    `npm install -g browserify`
-
-   y luego ejecutarlo de la siguiente manera para crear la carpeta donde se guardará tu código modificado
+   
+   Luego crea en la raíz de tu proyecto las carpetas `src` y `dist` con el archivo `app.js` dentro de cada una, luego ejecuta browserify de la siguiente manera para que tu js original que se encuentra en la carpeta `src` se guarde modificado en la carpeta `dist`
 
    `browserify src/app.js -o dist/app.js`
 
@@ -53,13 +58,14 @@ var cardify = require('cardify');
    </div>
    ```
 
-**Ten en cuenta que el comando `browserify src/app.js -o dist/app.js` del paso número 3 deberás repetirlo cada vez que actualices el plugin desde tu terminal**
+### **Ten en cuenta que el comando `browserify src/app.js -o dist/app.js` del paso número 3 deberás repetirlo cada vez que actualices el plugin desde tu terminal**
 
-Y listo! ya estás preparado para usar browserify.
+## Y listo! ya estás preparado para usar browserify.
 
 ## Ejemplo
 
 ![Ejemplo Cardify](http://www.grupojega.cl/images/gifcardify.gif)
+[**DEMO**]()
 
 ## Herramientas
 
